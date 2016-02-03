@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hb6-BX-Qfb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Axg-fp-aXm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -78,7 +78,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="-399"/>
+            <point key="canvasLocation" x="1036" y="-379"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9JK-iT-1ts">
+            <objects>
+                <viewController storyboardIdentifier="page2" id="iHm-TT-mud" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l9s-hC-dQh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysm-Zg-3b7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mGN-RU-PEn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="罗丹-思想者.png" translatesAutoresizingMaskIntoConstraints="NO" id="KXs-nM-zcT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KXs-nM-zcT" firstAttribute="leading" secondItem="mGN-RU-PEn" secondAttribute="leading" id="BWl-mf-JZb"/>
+                            <constraint firstItem="KXs-nM-zcT" firstAttribute="top" secondItem="mGN-RU-PEn" secondAttribute="top" id="a31-03-kZi"/>
+                            <constraint firstAttribute="trailing" secondItem="KXs-nM-zcT" secondAttribute="trailing" id="qby-2Z-5Nh"/>
+                            <constraint firstItem="KXs-nM-zcT" firstAttribute="bottom" secondItem="ysm-Zg-3b7" secondAttribute="top" id="rgg-SL-XSV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMR-5K-Kl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="403"/>
         </scene>
         <!--注册-->
         <scene sceneID="wPr-QX-bx6">
@@ -178,6 +207,56 @@
             </objects>
             <point key="canvasLocation" x="172" y="-407"/>
         </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="mUq-ua-KAj">
+            <objects>
+                <viewController id="Axg-fp-aXm" customClass="PictureViewController" customModule="AllViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGd-eC-yMq"/>
+                        <viewControllerLayoutGuide type="bottom" id="zCw-7o-13e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sXQ-SU-sFF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saa-iK-GVD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1y4-lV-CFW">
+                                <rect key="frame" x="150" y="555" width="300" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0WI-3x-ETB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changePage:" destination="Axg-fp-aXm" eventType="valueChanged" id="iND-eP-bLo"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="saa-iK-GVD" firstAttribute="top" secondItem="sXQ-SU-sFF" secondAttribute="top" id="9WQ-bZ-ojI"/>
+                            <constraint firstItem="saa-iK-GVD" firstAttribute="bottom" secondItem="zCw-7o-13e" secondAttribute="top" id="N9b-LJ-fDS"/>
+                            <constraint firstAttribute="trailing" secondItem="saa-iK-GVD" secondAttribute="trailing" id="S6K-Y7-Cmy"/>
+                            <constraint firstItem="saa-iK-GVD" firstAttribute="bottom" secondItem="zCw-7o-13e" secondAttribute="top" id="sfg-IX-fI0"/>
+                            <constraint firstItem="saa-iK-GVD" firstAttribute="leading" secondItem="sXQ-SU-sFF" secondAttribute="leading" id="ssb-LC-MS4"/>
+                            <constraint firstItem="1y4-lV-CFW" firstAttribute="centerX" secondItem="sXQ-SU-sFF" secondAttribute="centerX" id="u3F-Cl-qt5"/>
+                            <constraint firstItem="zCw-7o-13e" firstAttribute="top" secondItem="1y4-lV-CFW" secondAttribute="bottom" constant="8" symbolic="YES" id="wKR-wb-JKR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sfg-IX-fI0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="1y4-lV-CFW" id="lMX-lq-U5w"/>
+                        <outlet property="scrollView" destination="saa-iK-GVD" id="HZ6-Nn-hxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NY5-Yp-j8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="403"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="sOq-cJ-dgt">
             <objects>
@@ -196,5 +275,68 @@
             </objects>
             <point key="canvasLocation" x="1875" y="-366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gRF-j5-B5e">
+            <objects>
+                <viewController storyboardIdentifier="page1" id="6dc-b0-pC5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Es9-gM-SEe"/>
+                        <viewControllerLayoutGuide type="bottom" id="oLx-QC-45v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NgK-5A-Kwh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="达芬奇-蒙娜丽莎.png" translatesAutoresizingMaskIntoConstraints="NO" id="lH0-86-W8j">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lH0-86-W8j" firstAttribute="bottom" secondItem="oLx-QC-45v" secondAttribute="top" id="2pv-IB-K9F"/>
+                            <constraint firstItem="lH0-86-W8j" firstAttribute="leading" secondItem="NgK-5A-Kwh" secondAttribute="leading" id="9ae-qX-Ccc"/>
+                            <constraint firstAttribute="trailing" secondItem="lH0-86-W8j" secondAttribute="trailing" id="Fmg-4T-YA2"/>
+                            <constraint firstItem="lH0-86-W8j" firstAttribute="top" secondItem="NgK-5A-Kwh" secondAttribute="top" id="XLo-A5-BKe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gM-5r-5hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="403"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WKP-Bc-iS0">
+            <objects>
+                <viewController storyboardIdentifier="page3" id="x9W-Wj-9CP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30G-LT-rXV"/>
+                        <viewControllerLayoutGuide type="bottom" id="z38-u5-zek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hzo-Ts-1ti">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="保罗克利-肖像.png" translatesAutoresizingMaskIntoConstraints="NO" id="SRD-rY-eNX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRD-rY-eNX" firstAttribute="top" secondItem="Hzo-Ts-1ti" secondAttribute="top" id="E78-0G-xLU"/>
+                            <constraint firstItem="SRD-rY-eNX" firstAttribute="bottom" secondItem="z38-u5-zek" secondAttribute="top" id="GfV-62-2YP"/>
+                            <constraint firstAttribute="trailing" secondItem="SRD-rY-eNX" secondAttribute="trailing" id="WdY-KY-AV0"/>
+                            <constraint firstItem="SRD-rY-eNX" firstAttribute="leading" secondItem="Hzo-Ts-1ti" secondAttribute="leading" id="gFV-Kh-aRC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mt5-04-Phv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="403"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="保罗克利-肖像.png" width="640" height="960"/>
+        <image name="罗丹-思想者.png" width="640" height="960"/>
+        <image name="达芬奇-蒙娜丽莎.png" width="640" height="960"/>
+    </resources>
 </document>

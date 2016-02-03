@@ -15,6 +15,10 @@
 		4170ED861C61E0680023F2AB /* AllViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170ED851C61E0680023F2AB /* AllViewControllerTests.swift */; };
 		4170ED911C61E0690023F2AB /* AllViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170ED901C61E0690023F2AB /* AllViewControllerUITests.swift */; };
 		4170ED9F1C6207BC0023F2AB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170ED9E1C6207BC0023F2AB /* RegisterViewController.swift */; };
+		41800D081C6222DF002D1E58 /* 保罗克利-肖像.png in Resources */ = {isa = PBXBuildFile; fileRef = 41800D051C6222DF002D1E58 /* 保罗克利-肖像.png */; };
+		41800D091C6222DF002D1E58 /* 罗丹-思想者.png in Resources */ = {isa = PBXBuildFile; fileRef = 41800D061C6222DF002D1E58 /* 罗丹-思想者.png */; };
+		41800D0A1C6222DF002D1E58 /* 达芬奇-蒙娜丽莎.png in Resources */ = {isa = PBXBuildFile; fileRef = 41800D071C6222DF002D1E58 /* 达芬奇-蒙娜丽莎.png */; };
+		41800D0C1C622722002D1E58 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41800D0B1C622722002D1E58 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4170ED901C61E0690023F2AB /* AllViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewControllerUITests.swift; sourceTree = "<group>"; };
 		4170ED921C61E0690023F2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4170ED9E1C6207BC0023F2AB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		41800D051C6222DF002D1E58 /* 保罗克利-肖像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保罗克利-肖像.png"; sourceTree = "<group>"; };
+		41800D061C6222DF002D1E58 /* 罗丹-思想者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "罗丹-思想者.png"; sourceTree = "<group>"; };
+		41800D071C6222DF002D1E58 /* 达芬奇-蒙娜丽莎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "达芬奇-蒙娜丽莎.png"; sourceTree = "<group>"; };
+		41800D0B1C622722002D1E58 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = ../PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,10 @@
 				4170ED701C61E0680023F2AB /* AppDelegate.swift */,
 				4170ED721C61E0680023F2AB /* ViewController.swift */,
 				4170ED9E1C6207BC0023F2AB /* RegisterViewController.swift */,
+				41800D0B1C622722002D1E58 /* PictureViewController.swift */,
 				4170ED741C61E0680023F2AB /* Main.storyboard */,
 				4170ED771C61E0680023F2AB /* Assets.xcassets */,
+				41800D041C6222DF002D1E58 /* images */,
 				4170ED791C61E0680023F2AB /* LaunchScreen.storyboard */,
 				4170ED7C1C61E0680023F2AB /* Info.plist */,
 			);
@@ -126,6 +136,17 @@
 				4170ED921C61E0690023F2AB /* Info.plist */,
 			);
 			path = AllViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		41800D041C6222DF002D1E58 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				41800D051C6222DF002D1E58 /* 保罗克利-肖像.png */,
+				41800D061C6222DF002D1E58 /* 罗丹-思想者.png */,
+				41800D071C6222DF002D1E58 /* 达芬奇-蒙娜丽莎.png */,
+			);
+			name = images;
+			path = ../../../Code/7.2.1/images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +256,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41800D091C6222DF002D1E58 /* 罗丹-思想者.png in Resources */,
+				41800D081C6222DF002D1E58 /* 保罗克利-肖像.png in Resources */,
 				4170ED7B1C61E0680023F2AB /* LaunchScreen.storyboard in Resources */,
 				4170ED781C61E0680023F2AB /* Assets.xcassets in Resources */,
 				4170ED761C61E0680023F2AB /* Main.storyboard in Resources */,
+				41800D0A1C6222DF002D1E58 /* 达芬奇-蒙娜丽莎.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4170ED9F1C6207BC0023F2AB /* RegisterViewController.swift in Sources */,
+				41800D0C1C622722002D1E58 /* PictureViewController.swift in Sources */,
 				4170ED731C61E0680023F2AB /* ViewController.swift in Sources */,
 				4170ED711C61E0680023F2AB /* AppDelegate.swift in Sources */,
 			);
@@ -491,6 +516,7 @@
 				4170ED971C61E0690023F2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4170ED981C61E0690023F2AB /* Build configuration list for PBXNativeTarget "AllViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +525,7 @@
 				4170ED9A1C61E0690023F2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4170ED9B1C61E0690023F2AB /* Build configuration list for PBXNativeTarget "AllViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +534,7 @@
 				4170ED9D1C61E0690023F2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
